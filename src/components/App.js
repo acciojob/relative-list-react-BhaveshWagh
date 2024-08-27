@@ -1,9 +1,18 @@
 import React from 'react'
 
+
 const App = () => {
+  const relativeListArr = ["Brother","Sister","Uncle","Unty","GrandFather"]
+ 
+
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+              <ol id ={"relativeList"}>
+                {relativeListArr.map((item,i)=>(
+                  <li id ={`relativeListItem${i+1}`}>{item}</li>
+                ))}
+
+              </ol>
     </div>
   )
 }
